@@ -4,11 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://cn5tbyjx11htt" path="res://Scenes/CardSlot.tscn" id="3_a8fu8"]
 [ext_resource type="Script" path="res://Scripts/PlayerHand.gd" id="3_tbgc7"]
 [ext_resource type="Script" path="res://Deck.gd" id="4_d5ejg"]
-[ext_resource type="Texture2D" uid="uid://0l8ptafgj4uk" path="res://Assets/Deck.png" id="4_tevk1"]
+[ext_resource type="Texture2D" uid="uid://duq4me6gvkhij" path="res://Assets/Deck.png" id="5_uuja6"]
 [ext_resource type="Script" path="res://InputManager.gd" id="6_41n2g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1xrc0"]
-size = Vector2(177, 264)
+size = Vector2(181, 264)
 
 [node name="Main" type="Node2D"]
 
@@ -30,23 +30,25 @@ script = ExtResource("4_d5ejg")
 
 [node name="Sprite2D" type="Sprite2D" parent="Deck"]
 z_index = -2
-texture = ExtResource("4_tevk1")
+position = Vector2(-0.999997, 4)
+scale = Vector2(0.245333, 0.256015)
+texture = ExtResource("5_uuja6")
 
 [node name="Area2D" type="Area2D" parent="Deck"]
 collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Deck/Area2D"]
-position = Vector2(-0.5, 0)
+position = Vector2(-2.5, 0)
 shape = SubResource("RectangleShape2D_1xrc0")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Deck"]
 modulate = Color(0, 0, 0, 1)
 z_index = -2
 offset_left = -8.0
-offset_top = -28.0
+offset_top = -95.0
 offset_right = 32.0
-offset_bottom = 12.0
+offset_bottom = -55.0
 scale = Vector2(2, 2)
 text = "0"
 
