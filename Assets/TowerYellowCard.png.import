@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://trcumaw0oscj"
-path="res://.godot/imported/Tower_Blue.png-a6d62c6787021f1a7bfe5867b129a50e.ctex"
+uid="uid://b63swvwhvlxvf"
+path="res://.godot/imported/TowerYellowCard.png-529df289e745c7eed5b369bcf2861531.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tower_Blue.png"
-dest_files=["res://.godot/imported/Tower_Blue.png-a6d62c6787021f1a7bfe5867b129a50e.ctex"]
+source_file="res://Assets/TowerYellowCard.png"
+dest_files=["res://.godot/imported/TowerYellowCard.png-529df289e745c7eed5b369bcf2861531.ctex"]
 
 [params]
 

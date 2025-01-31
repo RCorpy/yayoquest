@@ -3,6 +3,7 @@ extends Node2D
 const COLLISION_MASK_CARD = 1
 const COLLISION_MASK_CARD_SLOT = 2
 const DEFAULT_CARD_MOVE_SPEED = 0.1
+const DEFAULT_CARD_SCALE = 0.8
 
 var card_being_dragged
 var screen_size
@@ -24,10 +25,10 @@ func _process(delta):
 
 func start_drag(card):
 	card_being_dragged = card
-	card.scale= Vector2(1,1)
+	card.scale= Vector2(DEFAULT_CARD_SCALE,DEFAULT_CARD_SCALE)
 	
 func finish_drag():
-	card_being_dragged.scale= Vector2(1.085,1.085)
+	card_being_dragged.scale= Vector2(1.085 * DEFAULT_CARD_SCALE,1.085 * DEFAULT_CARD_SCALE)
 	var card_slot_found = raycast_check_for_card_slot()
 	
 	if card_slot_found and not card_slot_found.card_in_slot:
@@ -85,10 +86,10 @@ func on_hovered_off_card(card):
 
 func highlight_card(card, hovered):
 	if hovered:
-		card.scale = Vector2(1.085, 1.085)
+		card.scale = Vector2(1.085 * DEFAULT_CARD_SCALE, 1.085 * DEFAULT_CARD_SCALE)
 		card.z_index = 2
 	else:
-		card.scale = Vector2(1, 1)
+		card.scale = Vector2(DEFAULT_CARD_SCALE, DEFAULT_CARD_SCALE)
 		card.z_index = 1
 
 func get_card_with_highest_z_index(cards):
