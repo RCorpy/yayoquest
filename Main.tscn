@@ -143,22 +143,18 @@ text = "End Turn
 [node name="OpponentDeck" type="Node2D" parent="."]
 position = Vector2(1780, 125)
 
-[node name="Deck" type="Node2D" parent="OpponentDeck"]
-scale = Vector2(0.8, 0.8)
-script = ExtResource("4_d5ejg")
-
-[node name="Sprite2D" type="Sprite2D" parent="OpponentDeck/Deck"]
+[node name="Sprite2D" type="Sprite2D" parent="OpponentDeck"]
 z_index = -2
-position = Vector2(-0.999997, 4)
-scale = Vector2(0.245333, 0.256015)
+position = Vector2(-0.800049, 3.2)
+scale = Vector2(0.196266, 0.204812)
 texture = ExtResource("5_uuja6")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="OpponentDeck/Deck"]
+[node name="RichTextLabel" type="RichTextLabel" parent="OpponentDeck"]
 modulate = Color(0, 0, 0, 1)
 z_index = -2
-offset_left = -8.0
-offset_top = -95.0
-offset_right = 32.0
-offset_bottom = -55.0
+offset_left = -6.40002
+offset_top = -76.0
+offset_right = 33.6
+offset_bottom = -36.0
 scale = Vector2(2, 2)
 text = "0"
