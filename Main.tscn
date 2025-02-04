@@ -3,12 +3,12 @@
 [ext_resource type="Script" path="res://Scripts/CardManager.gd" id="1_1ioxr"]
 [ext_resource type="PackedScene" uid="uid://cn5tbyjx11htt" path="res://Scenes/CardSlot.tscn" id="3_a8fu8"]
 [ext_resource type="Script" path="res://Scripts/PlayerHand.gd" id="3_tbgc7"]
-[ext_resource type="Script" path="res://Deck.gd" id="4_d5ejg"]
+[ext_resource type="Script" path="res://Scripts/Deck.gd" id="4_d5ejg"]
 [ext_resource type="Script" path="res://Scripts/OpponentHand.gd" id="4_ncfde"]
 [ext_resource type="Texture2D" uid="uid://duq4me6gvkhij" path="res://Assets/Deck.png" id="5_uuja6"]
-[ext_resource type="Script" path="res://InputManager.gd" id="6_41n2g"]
-[ext_resource type="Script" path="res://BattleManager.gd" id="7_vpdg6"]
-[ext_resource type="Script" path="res://OpponentDeck.gd" id="8_trs0l"]
+[ext_resource type="Script" path="res://Scripts/InputManager.gd" id="6_41n2g"]
+[ext_resource type="Script" path="res://Scripts/BattleManager.gd" id="7_vpdg6"]
+[ext_resource type="Script" path="res://Scripts/OpponentDeck.gd" id="8_trs0l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1xrc0"]
 size = Vector2(181, 264)
